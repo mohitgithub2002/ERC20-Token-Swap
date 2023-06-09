@@ -10,6 +10,7 @@ interface IERC20 {
 contract SwapERC20 {
     uint256 public RATE = 10_000_000;
     address public OWNER;
+    uint256 public raisedEth;
 
     IERC20 token;
 
@@ -27,6 +28,7 @@ contract SwapERC20 {
         );
         payable(OWNER).transfer(msg.value);
         token.transfer(msg.sender, tokenAmount);
+        raisedEth += msg.value;
         return true;
     }
 
