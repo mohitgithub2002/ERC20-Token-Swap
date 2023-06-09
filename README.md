@@ -1,6 +1,6 @@
-# Drug Transpotation
+# ERC20 Token Swap
 
-This project demonstrates a basic Intreact from smart contract through reactjs frontend
+## Swap ERC20 tokens for ETH
 
 Commands to run
 
