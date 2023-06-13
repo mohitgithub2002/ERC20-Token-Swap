@@ -204,14 +204,14 @@ function App() {
           <div className="App">
                <header className="nevbar">
                     <span></span>
-                    <h1>Uniswap ERC20 Token swap</h1>
+                    <h1>ICO Token swap</h1>
                     <button onClick={connectMetamask}>
                          {account
                               ? `${account.substring(
                                      0,
-                                     4
+                                     3
                                 )}....${account.substring(
-                                     account.length - 4,
+                                     account.length - 3,
                                      account.length
                                 )}`
                               : "Connect "}
@@ -219,8 +219,8 @@ function App() {
                </header>
 
                <div className="container">
-                         <div className="value">
-                              <h2> Raise ETH Amount : {raiseAmount} ETH </h2>
+                         <div >
+                              <h2 className="value"> Raise ETH Amount : {raiseAmount} ETH </h2>
                          </div>
                          <div className="box">
                               <h2> ERC20 Token Swap </h2>
